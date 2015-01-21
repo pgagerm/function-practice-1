@@ -47,8 +47,68 @@
 
 
 
-var toArray = function(a, b, c) {
-	return ("[" + a + ", " + b + ", " + c + "]");
+// var toArray = function(a, b, c) {
+// 	return ("[" + a + ", " + b + ", " + c + "]");
+// }
+
+// console.log(toArray(5, 2, 3));
+
+
+
+// var startsWithA = function(a) {
+// 	if (a.charAt(0) === "a") {
+// 		return true
+// 	} else {
+// 		return false
+// 	}
+// }
+
+// console.log(startsWithA("apple"));
+
+
+
+// var excite = function(a) {
+// 	return (a.toString() + "!!!");
+// }
+
+// console.log(excite("yeah"));
+
+
+
+// var sun = function(a) {
+// 	if (a.indexOf("sun") >= 0) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+
+// console.log(sun("sundries"));
+
+
+
+// var tiny = function(a) {
+// 	if (a < 0 || a > 1) {
+// 		return false 
+// 	} else {
+// 		return true
+// 	}
+// }
+
+// console.log(tiny(1));
+
+
+
+var getSeconds = function (x) {
+    var p = x.split(':'),
+        s = 0, m = 1;
+
+    while (p.length > 0) {
+        s += m * parseInt(p.pop(), 10);
+        m *= 60;
+    }
+
+    return s;
 }
 
-console.log(toArray(5, 2, 3));
+console.log(getSeconds("01:00"));
